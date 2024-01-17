@@ -52,7 +52,7 @@ public class PigLatin {
 	    else if (sWord.length()>=2 && sWord.substring(0, 2).equals("qu")){
 		return sWord.substring(2) + sWord.substring(0, 2) + "ay";
 	    }
-	    else if (sWord.charAt(0) !== 'a' || sWord.charAt(0) !== 'e' || sWord.charAt(0) !== 'i' || sWord.charAt(0) !== 'o' || sWord.charAt(0) !== 'u'){
+	    else if (sWord.charAt(0) != 'a' || sWord.charAt(0) != 'e' || sWord.charAt(0) != 'i' || sWord.charAt(0) != 'o' || sWord.charAt(0) != 'u'){
 		return sWord.substring(findFirstVowel(sWord)) + sWord.substring(0, findFirstVowel(sWord)) + "ay";
 	    }
 	    else{
